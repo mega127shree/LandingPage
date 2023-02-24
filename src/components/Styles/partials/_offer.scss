@@ -1,0 +1,53 @@
+@import './variables';
+.offers{
+    margin:250px 0 0 150px;
+    div{
+        hr{
+            margin:0;
+            @include width(10%);
+            @media(max-width:400px){
+                margin:180px 0 0 80px;
+                @include width(50%);
+            }
+         }
+    }
+    @media(max-width:400px){
+        margin:100px 20px 100px 20px ;
+    }
+    h1{
+        font-size:$fontMax;
+    }
+    .Scheme{
+        display:grid;
+        grid-template-columns:330px 330px 320px;
+        gap:0 10px;
+        @media(max-width:400px){
+            display: flex;
+            flex-direction: column;
+ justify-content:space-between;
+            .scheme1,.scheme2,.scheme3{
+                display: flex;
+                flex-direction: column;
+                 align-items: center;
+                  
+            }
+        }
+          h3{
+             font-size:1.5rem;
+             @media(max-width:400px){
+                margin-bottom:0;
+             }
+             }
+           p{
+            letter-spacing: 0.5px;
+            line-height:1.5em;
+            color:$links;
+         font-family: $navFonttwo;
+          font-size: $fontMintwo;
+          @media(max-width:400px){
+            text-align:center;
+            margin:10px 13px 30px 10px;
+          }
+             }
+    }
+}
