@@ -7,12 +7,10 @@
    .homelink{
       font-family: $navFont;
       color:$homeLink;
-      @media(max-width:400px){
+      @media(max-width:600px){
         position: absolute;
-         
         left:20px;
         font-size: 1.3rem;
-         
       }
    }
    .nav-links{
@@ -25,7 +23,7 @@
        font-family: $navFonttwo;
         font-size:  $fontMin;
     }
-    @media(max-width:400px){
+    @media(max-width:600px){
       display: none;
     }
     
@@ -44,10 +42,7 @@
   display: flex;
   flex-direction: column;
   z-index:99;
-  padding: 0;
-  //  nav{
-  //   margin-left: 15%;
-    
+  padding: 0; 
     a{
       text-decoration: none;
       letter-spacing: 2px;
@@ -56,7 +51,7 @@
         font-weight:600;
        font-family: $navFonttwo;
         font-size:  $fontMin;
-        @media(max-width:400px){
+        @media(max-width:600px){
           &:first-child{
              margin-top: 30px;
           }
@@ -73,8 +68,9 @@
   }
   svg{
     
-    @media(max-width:400px){
+    @media(max-width:600px){
       margin-top:35px;
+      width: 100%;
     }
    
   }
@@ -82,7 +78,7 @@
 .mobile-menu-icons{
 display: none;
 
-@media(max-width:400px){
+@media(max-width:600px){
   display: block;
   position: absolute;
   top:15px;
@@ -99,16 +95,17 @@ background:transparent;
        &:hover{
         background: $homeLink;
        }
-       @media(max-width:400px){
-        width: 90%;
+       @media(max-width:600px){
+         
         text-align: center;
         border:2px solid $white;
+        margin:5%;
        }
        .viewPlans{
         padding:0;
         margin: 0;
         color:$homeLink;
-        @media(max-width:400px){
+        @media(max-width:600px){
           color:$white;
         }
         &:hover{

@@ -13,16 +13,14 @@
             <div className="mobile-intro-right">  
               <picture>
    <source 
-      media="(max-width: 400px)"
+      media="(max-width: 600px)"
       srcSet={Images.introLeftMobile}/>
-     <source 
-     media="(min-width:400px)"
-     srcSet={Images.introLeft}/>
+    
    <img src={Images.introLeft}
    alt="intro-desktop"/>
 </picture>
             </div>
-            {/* <hr/> */}
+             
               <div className="centerContent">
                 
                 <div className="text">
@@ -35,17 +33,16 @@
    </div>
    <div className="desktop-image"> 
     <picture>
-      <source media="(max-width:400px )" srcSet={Images.introMobile} />
+      <source media="(max-width:600px )" srcSet={Images.introMobile} />
       <img src={Images.introDesktop} alt="DesktopImage" />
     </picture>
    </div>
     </div>
               <div className="images">
-                 
                 <div className="pic2">
             <picture>
-              <source media="(max-width:400px)" srcSet={Images.introRightMobile} />
-              <source media="(min-width:401px)" srcSet={Images.introRight}/>
+              <source media="(max-width:600px)" srcSet={Images.introRightMobile} />
+               
               <img src={Images.introRight} alt="intro-right" />
             </picture>
            </div>

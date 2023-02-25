@@ -7,8 +7,8 @@ const Footer = () => {
         <div className="footer">
             <div className="svg-footer">
              <picture>
-                <source media="(max-width:400px)" srcSet={Images.footerMobile} />
-                <source media="(min-width: 400px)" srcSet={Images.footer} />
+                <source media="(max-width:720px)" srcSet={Images.footerMobile} />
+                 
                 <img src={Images.footer} alt="footer" />
                 </picture></div>
      <div className="footer-header">

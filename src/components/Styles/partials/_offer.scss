@@ -1,30 +1,55 @@
 @import './variables';
 .offers{
-    margin:250px 0 0 150px;
+    margin:250px 0 0 100px;
+    @media(max-width:400px){
+        margin:150px 20px 100px 20px ;
+    }
+    @media   (min-width:401px) and (max-width:720px){
+        margin: 250px 10% 0 10%;
+    } 
     div{
+        @media(max-width:400px)  {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
         hr{
             margin:0;
             @include width(10%);
             @media(max-width:400px){
-                margin:180px 0 0 80px;
-                @include width(50%);
+                @include width(30%);
             }
+
          }
     }
-    @media(max-width:400px){
-        margin:100px 20px 100px 20px ;
-    }
+     
     h1{
         font-size:$fontMax;
+        @media(max-width:400px){
+             font-size:2rem;
+            text-align: center;
+        }
+        
     }
     .Scheme{
         display:grid;
-        grid-template-columns:330px 330px 320px;
+        grid-template-columns:30% 30% 30%;
         gap:0 10px;
         @media(max-width:400px){
             display: flex;
             flex-direction: column;
  justify-content:space-between;
+            .scheme1,.scheme2,.scheme3{
+                display: flex;
+                flex-direction: column;
+                 align-items: center;
+                  
+            }
+        }
+        @media(min-width:401px) and (max-width:720px){
+            display: flex;
+            flex-direction: column;
+            
             .scheme1,.scheme2,.scheme3{
                 display: flex;
                 flex-direction: column;
@@ -48,6 +73,9 @@
             text-align:center;
             margin:10px 13px 30px 10px;
           }
+          @media(min-width:401px) and (max-width:720px){
+            padding-bottom:20px;
              }
     }
+}
 }

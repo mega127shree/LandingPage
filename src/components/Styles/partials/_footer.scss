@@ -4,10 +4,10 @@
      margin-top:100px;
      width:100%;
      position: relative;
-     @media(max-width:400px) {
+     @media(max-width:720px) {
     position: relative;
       padding:0;
-        width:100%; 
+      width:100%; 
      }
      .svg-footer{
         position: absolute;
@@ -20,9 +20,9 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin:0 150px 0 150px;
+        margin:0 11% 0 11%;
         padding:43px 0 12px 0;
-        @media(max-width:400px){
+        @media(max-width:720px){
                display: block;
                margin: 0;
                padding: 0;
@@ -51,14 +51,17 @@
             @include width(90%);
             margin-top:1.5em;
          }
+         @media(max-width:720px){
+            @include width(50%);
+         }
 
     }
     .queries-info{
-        margin:0 400px 0 150px;
+        margin:0 20% 0 12%;
         display: flex;
         justify-content: space-between;
         font-family:$navFonttwo;
-        @media(max-width:400px){
+        @media(max-width:720px){
          display:flex;
          flex-direction: column;
          align-items: center;
