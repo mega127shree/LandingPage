@@ -14,7 +14,7 @@
             justify-content: center;
         }
         hr{
-            margin:0;
+            @include margin(0);
             @include width(10%);
             @media(max-width:400px){
                 @include width(30%);

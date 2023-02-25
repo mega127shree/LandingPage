@@ -2,12 +2,12 @@
 .footer{
     background:rgba(235, 233, 233, 0.418);
      margin-top:100px;
-     width:100%;
+     @include width(100%);
      position: relative;
      @media(max-width:720px) {
     position: relative;
       padding:0;
-      width:100%; 
+      @include width(100%); 
      }
      .svg-footer{
         position: absolute;
@@ -24,7 +24,7 @@
         padding:43px 0 12px 0;
         @media(max-width:720px){
                display: block;
-               margin: 0;
+                @include margin(0);
                padding: 0;
                h3{
                   padding:5rem 0 0 0 ;
@@ -65,7 +65,7 @@
          display:flex;
          flex-direction: column;
          align-items: center;
-         margin:10px;
+         @include margin(10px);
         .ourcompany,.helpme,.contact,.others{
          display: flex;
           flex-direction: column;

@@ -26,11 +26,7 @@ $fontMax:3rem;
     letter-spacing: 1px;
     font-family:$navFonttwo;
 }
-// @mixin h3{
-//     padding: 0  $fontMin;
-//     margin: 0;
-//     font-size:  $fontMin;
-// }
+ 
 @mixin margin($m){
     margin:$m;
 }
