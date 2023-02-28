@@ -1,8 +1,6 @@
 import {Link} from "react-router-dom";
 import '../Styles/Style.css';
- 
 import { useState } from "react";
-
 const Navbar = () =>{
     const[isMobile,setIsMobile]=useState(false);
     return(
@@ -11,8 +9,7 @@ const Navbar = () =>{
                  <h3>INSURE</h3>
              </div>
              <nav> 
-                <ul className={isMobile?"nav-links-mobile":"nav-links"}
-                onClick={()=>setIsMobile(false)}>
+                <ul className={isMobile?"nav-links-mobile":"nav-links"}>
                 <Link to="/">HOW WE WORK</Link>
              <Link to="/">BLOG</Link>
              <Link to="/">ACCOUNT</Link>
